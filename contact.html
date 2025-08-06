@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Media Crux</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/contact.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="assets/images/Foxstream-1-125x125.png" alt="">
+        Media Crux
+      </div>
+      <nav class="nav-links">
+        <a href="index.html"><i class="fas fa-home nav-icon"></i>Home</a>
+        <a href="about.html"><i class="fas fa-info-circle nav-icon"></i>About</a>
+        <a href="services.html"><i class="fas fa-cogs nav-icon"></i>Services</a>
+        <a href="contact.html"><i class="fas fa-envelope nav-icon"></i>Contact</a>
+      </nav>
+      <a href="#" class="btn primary-btn">
+        <i class="fas fa-rocket btn-icon"></i>
+        Get Started
+      </a>
+    </div>
+  </header>
+
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>Share Your Vision We Bring It to Life</h1>
+    </div>
+  </section>
+    
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h1 class="section-title">Reach Out To Us</h1>
+                <p class="section-subtitle">Get in touch with Media Crux for inquiries, collaborations, or support.</p>
+            </div>
+
+            <!-- Contact Content -->
+            <div class="contact-content">
+                <!-- Contact Info Card -->
+                <div class="contact-info-card">
+                    <!-- Address Section -->
+                    <div class="info-section">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3 class="info-title">Address</h3>
+                            <p class="info-text">Lagos, Nigeria.</p>
+                        </div>
+                    </div>
+
+                    <!-- Email Section -->
+                    <div class="info-section">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3 class="info-title">Email</h3>
+                            <p class="info-text">
+                                <a href="mailto:mediacrux361@gmail.com">mediacrux361@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Section -->
+                    <div class="social-section">
+                        <div class="social-links">
+                            <a href="https://facebook.com/mediacrux" target="_blank" class="social-link facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://x.com/middycrux/" target="_blank" class="social-link twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com/mediacrux" target="_blank" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/middycrux?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://youtube.com/@middycrux" target="_blank" class="social-link youtube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2 class="form-title">Contact Form</h2>
+                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/speedyspeed871@gmail.com" method="POST">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="New Contact Form Submission from Media Crux Website">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">                        
+                        <!-- Name Fields Row -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="firstName" name="name" required>
+                                <label for="firstName" class="form-label">First name</label>
+                                <span class="form-border"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="lastName" name="lastname" required>
+                                <label for="lastName" class="form-label">Last name</label>
+                                <span class="form-border"></span>
+                            </div>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email" class="form-label">Email address</label>
+                            <span class="form-border"></span>
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                            <label for="message" class="form-label">Enter your message</label>
+                            <span class="form-border"></span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <span class="btn-text">SUBMIT</span>
+                            <span class="btn-loader" id="btnLoader">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
+                    </form>
+
+                    <!-- Success/Error Messages -->
+                    <div class="form-message success" id="successMessage">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Message sent successfully! We'll get back to you soon.</span>
+                    </div>
+                    <div class="form-message error" id="errorMessage">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span>Sorry, there was an error sending your message. Please try again.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CALL TO ACTION ========== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Let's Build The Future Of Your Business</h2>
+        <p>Elevate your brand with Media Crux's AI-driven creative solutions.</p>
+        <a href="#contact" class="btn primary-btn">GET STARTED</a>
+      </div>
+    </div>
+  </section>
+
+   <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Copyright © 2025 Media Crux</p>
+    </div>
+  </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Form elements
+            const form = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const btnLoader = document.getElementById('btnLoader');
+            const successMessage = document.getElementById('successMessage');
+            const errorMessage = document.getElementById('errorMessage');
+
+            // Form inputs for floating label animation
+            const formInputs = document.querySelectorAll('.form-group input, .form-group textarea');
+            
+            // Add floating label functionality
+            formInputs.forEach(input => {
+                // Check if input has value on page load
+                if (input.value.trim() !== '') {
+                    input.classList.add('has-value');
+                }
+
+                input.addEventListener('focus', function() {
+                    this.parentElement.classList.add('focused');
+                });
+
+                input.addEventListener('blur', function() {
+                    if (this.value.trim() === '') {
+                        this.classList.remove('has-value');
+                    } else {
+                        this.classList.add('has-value');
+                    }
+                    this.parentElement.classList.remove('focused');
+                });
+
+                input.addEventListener('input', function() {
+                    if (this.value.trim() !== '') {
+                        this.classList.add('has-value');
+                    } else {
+                        this.classList.remove('has-value');
+                    }
+                });
+            });
+
+            // Form submission
+            form.addEventListener('submit', function(e) {
+                // Don't prevent default - let FormSubmit handle it
+                // e.preventDefault(); // REMOVED THIS LINE
+                
+                // Show loading state
+                submitBtn.classList.add('loading');
+                btnText.style.opacity = '0';
+                btnLoader.style.display = 'block';
+
+                // Hide any previous messages
+                successMessage.classList.remove('show');
+                errorMessage.classList.remove('show');
+
+                // Let the form submit naturally to FormSubmit
+                // The form will redirect to FormSubmit's confirmation page
+            });
+
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('animate-in');
+                        }, index * 200);
+                    }
+                });
+            }, observerOptions);
+
+            // Observe elements for animation
+            const animatedElements = document.querySelectorAll('.section-header, .contact-info-card, .contact-form-container');
+            animatedElements.forEach(el => observer.observe(el));
+
+            // Social links hover effect
+            const socialLinks = document.querySelectorAll('.social-link');
+            socialLinks.forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px) scale(1.1)';
+                });
+
+                link.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Email configuration (You'll need to replace this with your actual email service)
+            // Example using EmailJS (you would need to include EmailJS library)
+            /*
+            function sendEmail(formData) {
+                emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+                    to_email: 'your-email@gmail.com', // Replace with your email
+                    from_name: formData.firstName + ' ' + formData.lastName,
+                    from_email: formData.email,
+                    message: formData.message
+                }).then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    // Handle success
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    // Handle error
+                });
+            }
+            */
+        });
+    </script>
+
+    <!-- EmailJS CDN (Uncomment if you want to use EmailJS) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
+    
+    <!-- FormSubmit alternative (Simple form submission service) -->
+    <!-- You can change the form action to: action="https://formsubmit.co/your-email@gmail.com" -->
+</body>
+</html>

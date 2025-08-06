@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Our Expertise</title>
+  <link rel="stylesheet" href="css/services.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    
+    <!-- ========== NAVBAR ========== -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="assets/images/Foxstream-1-125x125.png" alt="">
+        Media Crux
+      </div>
+      <nav class="nav-links">
+        <a href="index.html"><i class="fas fa-home nav-icon"></i>Home</a>
+        <a href="about.html"><i class="fas fa-info-circle nav-icon"></i>About</a>
+        <a href="services.html"><i class="fas fa-cogs nav-icon"></i>Services</a>
+        <a href="contact.html"><i class="fas fa-envelope nav-icon"></i>Contact</a>
+      </nav>
+      <a href="contact.html" class="btn primary-btn">
+        <i class="fas fa-rocket btn-icon"></i>
+        Get Started
+      </a>
+    </div>
+  </header>
+
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>Helping Brands Shine Through Visual Intelligence</h1>
+    </div>
+  </section>
+    
+    
+    
+    <!-- Main Content Section -->
+    <section class="expertise-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">Explore Our Expertise</h2>
+                <p class="section-subtitle">Explore strategic AI services built to accelerate brand creativity</p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="services-grid">
+                <!-- Disney Artworks -->
+                <div class="service-card large-card" data-service="disney">
+                    <div class="card-background disney-bg"></div>
+                    <div class="card-overlay">
+                        <div class="card-content">
+                            <h3 class="service-title">Disney artworks</h3>
+                            <p class="service-description">Our clients have produces enchanting Pixar-style artworks that capture emotion and bring your ideas to life.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DeepFake Video -->
+                <div class="service-card large-card" data-service="deepfake">
+                    <div class="card-background deepfake-bg"></div>
+                    <div class="card-overlay">
+                        <div class="card-content">
+                            <h3 class="service-title">DeepFake Video</h3>
+                            <p class="service-description">Leverage the power of AI-driven DeepFake technology to create captivating content and seamless visual transformations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spokesperson AI -->
+                <div class="service-card large-card" data-service="spokesperson">
+                    <div class="card-background spokesperson-bg"></div>
+                    <div class="card-overlay">
+                        <div class="card-content">
+                            <h3 class="service-title">Spokesperson AI</h3>
+                            <p class="service-description">Through voice and motion refinement ensures lifelike delivery, offering viewers a flawless and engaging AI spokesperson experience.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Photography -->
+                <div class="service-card large-card" data-service="photography">
+                    <div class="card-background photography-bg"></div>
+                    <div class="card-overlay">
+                        <div class="card-content">
+                            <h3 class="service-title">Product Photography</h3>
+                            <p class="service-description">Enable brands to showcase their products effectively with high-quality, visually compelling photography.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI-Generated Fashion Model -->
+                <div class="service-card large-card" data-service="fashion">
+                    <div class="card-background fashion-bg"></div>
+                    <div class="card-overlay">
+                        <div class="card-content">
+                            <h3 class="service-title">AI-Generated Fashion Model</h3>
+                            <p class="service-description">Showcase apparel with stunning AI-generated fashion models, enhancing brand appeal, efficiency, and creative flexibility.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Character Digital Artwork -->
+                <div class="service-card large-card" data-service="character">
+                    <div class="card-background character-bg"></div>
+                    <div class="card-overlay">
+                        <div class="card-content">
+                            <h3 class="service-title">Character Digital Artwork</h3>
+                            <p class="service-description">Create stunning character digital artwork that captures your brand's essence, enhances storytelling, and elevates your visual identity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== CALL TO ACTION ========== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Let's Build The Future Of Your Business</h2>
+        <p>Elevate your brand with Media Crux's AI-driven creative solutions.</p>
+        <a href="contact.html" class="btn primary-btn">GET STARTED</a>
+      </div>
+    </div>
+  </section>
+
+   <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Copyright © 2025 Media Crux</p>
+    </div>
+  </footer>
+
+    <script>
+        // Add interactive functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const serviceCards = document.querySelectorAll('.service-card');
+            
+            serviceCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.classList.add('card-hover');
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.classList.remove('card-hover');
+                });
+                
+                card.addEventListener('click', function() {
+                    const service = this.dataset.service;
+                    console.log(`Clicked on ${service} service`);
+                    // Add your click functionality here
+                });
+            });
+            
+            // Intersection Observer for scroll animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('animate-in');
+                        }, index * 100);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            serviceCards.forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
